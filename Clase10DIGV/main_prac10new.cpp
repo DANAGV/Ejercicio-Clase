@@ -296,7 +296,7 @@ void animacion()
 		fig3.text_der=1;
 
 
-	if (g_fanimacion)
+	if (g_fanimacion)//moviento del carro
 	{
 		movKit -= 0.5;
 	}
@@ -306,7 +306,7 @@ void animacion()
 		movKit += 0.5;
 	}
 
-	if (g_fanimacion)
+	if (g_fanimacion) //moviento de las llantas
 	{
 			movllantas = (movllantas - 5) % 360;
 	} 
@@ -358,7 +358,7 @@ void keyboard ( unsigned char key, int x, int y )  // Create Keyboard Function
 			objCamera.Strafe_Camera( CAMERASPEED+0.4 );
 			break;
 		
-		case 'p':
+		case 'p': //continuar con el moviento del carro
 			g_fanimacion = false;
 			break;
 		case 'P':
